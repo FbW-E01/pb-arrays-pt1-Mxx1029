@@ -115,9 +115,19 @@ console.log(olleh.split("").reverse().join(""));
 // Print the results to the console.
 
 // 1. Make an array of your siblings' names or your favorite movie characters' names.
+const siblingsNames = ["Matthias", "Sebastian"];
 // 2. Make an array of your parents' names.
+const parentsNames = ["Renate", "Thomas"];
 // 3. Combine these two arrays.
+const familyNames = parentsNames.concat(siblingsNames);
 // 4. Add your pets' names.
+const familyAndPetsNames = familyNames.concat("Amadeus", "Trudi", "Trudi", "Bommel", "Hans", "Fritz", "Watson", "Krümel");
+console.log(familyAndPetsNames);
 // 5. Reverse the order of the array.
+familyAndPetsNames.reverse();
+console.log(familyAndPetsNames);
 // 6. Access one of your parents' names.
+console.log(familyAndPetsNames[familyAndPetsNames.length - 1]);
 // 7. Update the name of one of your parents. 
+familyAndPetsNames[familyAndPetsNames.length - 2] = "Armin Johannes Thomas";
+console.log(familyAndPetsNames);
